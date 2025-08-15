@@ -1,6 +1,6 @@
 @font-face {
   font-family: roboto;
-  src: url(./Roboto-VariableFont_wdth\,wght.ttf);
+  src: url(./Roboto-VariableFont_wdth\wght.ttf);
 }
 
 * {
@@ -40,6 +40,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .logo i {
@@ -69,6 +70,7 @@ ul li {
   font-size: 20px;
   font-weight: 600;
   list-style: none;
+  cursor: pointer;
 }
 
 #shop-btn {
@@ -144,32 +146,38 @@ ul li {
   background-color: rgb(237, 237, 237);
   border-radius: 30px;
   overflow: hidden;
+  transition: all 0.17s linear;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .card-img-box {
-    height: 65%;
-    width: 100%;
-    background-image: url(https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=1448&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-position: right;
+  height: 65%;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=1448&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: right;
 }
 
 .card p {
-    padding: 0 10px;
-    margin: 20px 0;
-    font-size: 12px;
+  padding: 0 10px;
+  margin: 20px 0;
+  font-size: 12px;
 }
 
 .card h4 {
-    margin: 40px 10px;
-    border: 1px solid rgb(200, 200, 200);
-    padding: 10px 20px;
-    border-radius: 50px;
+  margin: 40px 10px;
+  border: 1px solid rgb(200, 200, 200);
+  padding: 10px 20px;
+  border-radius: 50px;
 }
 
-.card h4>i {
-    color: red;
-    margin-right: 20px;
+.card h4 > i {
+  color: red;
+  margin-right: 20px;
 }
 
 #all-pro-btn button {
@@ -178,6 +186,7 @@ ul li {
   border-radius: 50px;
   color: #fff;
   background-color: #000;
+  cursor: pointer;
 }
 
 .meet-kini {
@@ -258,6 +267,7 @@ ul li {
   border-radius: 50px;
   color: #000000;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .benefits {
@@ -292,6 +302,11 @@ ul li {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  transition: all 0.17s linear;
+}
+
+.benefits-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .img-box {
@@ -302,7 +317,7 @@ ul li {
   background-position: top;
   border-radius: 30px;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
 }
 
@@ -494,60 +509,69 @@ ul li {
 }
 
 .icons {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .icons i {
-    font-size: 35px;
-    margin-right: 10px;
-    color: #fff;
+  cursor: pointer;
+  font-size: 35px;
+  margin-right: 10px;
+  color: #fff;
 }
 
 .items h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #b9b9b9;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #b9b9b9;
 }
-.items h4>i {
-    margin-right: 10px;
+.items h4 > i {
+  margin-right: 10px;
 }
 
 .second-box {
-    height: 100%;
-    width: 15%;
+  height: 100%;
+  width: 15%;
 }
 
 .second-box ul li {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.second-box ul li:hover {
+  text-decoration: underline;
 }
 
 .third-box {
-    height: 100%;
-    width: 25%;
+  height: 100%;
+  width: 25%;
 }
 
 .third-box ul li {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: gray;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: gray;
 }
 
-.footer-dets p{
-    color: gray;
+.third-box ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-dets p {
+  color: gray;
 }
 
 .footer-public-logos {
-    width: 100%;
+  width: 100%;
 }
 
 .fame-spread {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .fame-spread img {
-    height: 50px;
+  height: 50px;
 }
